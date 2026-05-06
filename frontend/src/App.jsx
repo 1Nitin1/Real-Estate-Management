@@ -416,9 +416,9 @@ export default function App() {
                 <input placeholder="State" value={newProperty.state} onChange={(e) => setNewProperty({ ...newProperty, state: e.target.value })} />
                 <input placeholder="Zip Code" value={newProperty.zipCode} onChange={(e) => setNewProperty({ ...newProperty, zipCode: e.target.value })} />
                 <input type="number" placeholder="Price*" value={newProperty.price} onChange={(e) => setNewProperty({ ...newProperty, price: e.target.value })} />
-                <input type="number" placeholder="Bedrooms" value={newProperty.bedrooms} onChange={(e) => setNewProperty({ ...newProperty, bedrooms: e.target.value })} />
-                <input type="number" step="0.5" placeholder="Bathrooms" value={newProperty.bathrooms} onChange={(e) => setNewProperty({ ...newProperty, bathrooms: e.target.value })} />
-                <input type="number" placeholder="Sq Ft" value={newProperty.sqFt} onChange={(e) => setNewProperty({ ...newProperty, sqFt: e.target.value })} />
+                <input type="number" placeholder="Bedrooms (e.g., 3)" value={newProperty.bedrooms} onChange={(e) => setNewProperty({ ...newProperty, bedrooms: e.target.value })} />
+                <input type="number" step="0.5" placeholder="Bathrooms (e.g., 2.5)" value={newProperty.bathrooms} onChange={(e) => setNewProperty({ ...newProperty, bathrooms: e.target.value })} />
+                <input type="number" placeholder="Sq Ft (e.g., 1500)" value={newProperty.sqFt} onChange={(e) => setNewProperty({ ...newProperty, sqFt: e.target.value })} />
                 <select value={newProperty.propertyType} onChange={(e) => setNewProperty({ ...newProperty, propertyType: e.target.value })}>
                   <option value="house">House</option>
                   <option value="apartment">Apartment</option>
