@@ -266,7 +266,7 @@ export default function App() {
               <div className="stat-label">Sold</div>
             </div>
             <div className="stat-card">
-              <div className="stat-number">${(summary.total_commissions || 0).toLocaleString()}</div>
+              <div className="stat-number">₹{(summary.total_commissions || 0).toLocaleString('en-IN')}</div>
               <div className="stat-label">Commissions</div>
             </div>
             <div className="stat-card">
@@ -318,7 +318,7 @@ export default function App() {
                         <tr key={p.id}>
                           <td><strong>{p.title}</strong></td>
                           <td>{p.city}, {p.state}</td>
-                          <td className="price">${p.price.toLocaleString()}</td>
+                          <td className="price">₹{p.price.toLocaleString('en-IN')}</td>
                           <td>{p.bedrooms}/{p.bathrooms}</td>
                           <td>{p.property_type}</td>
                           <td><span className={`badge ${p.status}`}>{p.status}</span></td>
@@ -357,8 +357,8 @@ export default function App() {
                         <tr key={a.id}>
                           <td><strong>{a.agent_name}</strong></td>
                           <td>{a.total_sales}</td>
-                          <td className="price">${(a.total_commission || 0).toLocaleString()}</td>
-                          <td>${(a.avg_sale_price || 0).toLocaleString()}</td>
+                          <td className="price">₹{(a.total_commission || 0).toLocaleString('en-IN')}</td>
+                          <td>₹{(a.avg_sale_price || 0).toLocaleString('en-IN')}</td>
                           <td>{a.active_listings}</td>
                           <td>{a.total_viewings}</td>
                         </tr>
@@ -393,8 +393,8 @@ export default function App() {
                           <td>{t.property_type}</td>
                           <td>{t.total_properties}</td>
                           <td>{t.sold_count}</td>
-                          <td className="price">${(t.avg_sold_price || 0).toLocaleString()}</td>
-                          <td>${(t.min_price || 0).toLocaleString()} - ${(t.max_price || 0).toLocaleString()}</td>
+                          <td className="price">₹{(t.avg_sold_price || 0).toLocaleString('en-IN')}</td>
+                          <td>₹{(t.min_price || 0).toLocaleString('en-IN')} - ₹{(t.max_price || 0).toLocaleString('en-IN')}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -570,7 +570,7 @@ export default function App() {
                   </div>
                   <div className="history-item">
                     <span className="label">Budget</span>
-                    <span className="value">${(clientHistory.budget_min || 0).toLocaleString()} - ${(clientHistory.budget_max || 0).toLocaleString()}</span>
+                    <span className="value">₹{(clientHistory.budget_min || 0).toLocaleString('en-IN')} - ₹{(clientHistory.budget_max || 0).toLocaleString('en-IN')}</span>
                   </div>
                   <div className="history-item">
                     <span className="label">Viewings</span>

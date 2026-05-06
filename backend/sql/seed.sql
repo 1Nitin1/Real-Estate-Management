@@ -30,16 +30,16 @@ INSERT INTO clients (user_id, client_type, preferences, budget_min, budget_max) 
 
 -- Insert properties
 INSERT INTO properties (title, address, city, state, zip_code, price, bedrooms, bathrooms, sq_ft, property_type, status, description, agent_id, seller_id, listed_date, sold_date) VALUES
-  ('आधुनिक लक्जरी अपार्टमेंट', 'Bandra East, Marine Drive', 'Mumbai', 'Maharashtra', '400051', 5000000, 3, 2, 1500, 'apartment', 'active', 'Modern luxury apartment with sea view', 2, 6, '2024-01-15', NULL),
-  ('आरामदायक परिवार का घर', 'Whitefield Main Road', 'Bangalore', 'Karnataka', '560066', 4000000, 4, 2, 2200, 'house', 'active', 'Family-friendly villa with garden', 2, 9, '2024-02-01', NULL),
-  ('प्रीमियम पेंटहाउस', 'Worli, South Mumbai', 'Mumbai', 'Maharashtra', '400025', 15000000, 4, 3, 3500, 'apartment', 'pending', 'Premium penthouse with 360° views', 3, 6, '2024-01-20', NULL),
-  ('समुद्र के किनारे कॉन्डो', 'Sector 15, DLF Phase', 'Gurgaon', 'Haryana', '122001', 3500000, 2, 2, 1200, 'condo', 'sold', 'Beachfront condo in DLF', 3, 8, '2023-12-01', '2024-03-10'),
-  ('ऐतिहासिक विलासवान घर', 'Koregaon Park', 'Pune', 'Maharashtra', '411001', 6500000, 4, 3, 2800, 'house', 'active', 'Restored heritage property with character', 2, 9, '2024-02-15', NULL),
-  ('कॉम्पैक्ट स्टूडियो', 'Indiranagar Main Street', 'Bangalore', 'Karnataka', '560008', 1500000, 1, 1, 600, 'apartment', 'active', 'Compact studio in prime location', 4, 8, '2024-03-01', NULL),
-  ('आधुनिक टाउनहाउस', 'Sector 37, Noida', 'Delhi', 'Delhi', '201303', 4500000, 3, 2.5, 1800, 'townhouse', 'active', 'Modern townhouse in Noida', 4, NULL, '2024-03-05', NULL),
-  ('विकास के लिए जमीन', 'Outer Ring Road', 'Hyderabad', 'Telangana', '500081', 2000000, 0, 0, 10000, 'land', 'active', 'Prime land for development', 4, 7, '2024-02-20', NULL),
-  ('समुद्र सामने कॉन्डो', 'Jubilee Hills', 'Hyderabad', 'Telangana', '500033', 7000000, 3, 2.5, 2000, 'condo', 'active', 'Luxury condo with lake view', 3, NULL, '2024-01-10', NULL),
-  ('कार्यकारी आवास', 'Vasant Vihar', 'Delhi', 'Delhi', '110057', 12000000, 5, 4, 4000, 'house', 'sold', 'Luxury executive home', 2, 9, '2023-11-15', '2024-02-28');
+  ('Modern Luxury Apartment', 'Bandra East, Marine Drive', 'Mumbai', 'Maharashtra', '400051', 5000000, 3, 2, 1500, 'apartment', 'active', 'Modern luxury apartment with sea view', 2, 6, '2024-01-15', NULL),
+  ('Comfortable Family Home', 'Whitefield Main Road', 'Bangalore', 'Karnataka', '560066', 4000000, 4, 2, 2200, 'house', 'active', 'Family-friendly villa with garden', 2, 9, '2024-02-01', NULL),
+  ('Premium Penthouse', 'Worli, South Mumbai', 'Mumbai', 'Maharashtra', '400025', 15000000, 4, 3, 3500, 'apartment', 'pending', 'Premium penthouse with 360° views', 3, 6, '2024-01-20', NULL),
+  ('Beachfront Condo', 'Sector 15, DLF Phase', 'Gurgaon', 'Haryana', '122001', 3500000, 2, 2, 1200, 'condo', 'sold', 'Beachfront condo in DLF', 3, 8, '2023-12-01', '2024-03-10'),
+  ('Historic Heritage Villa', 'Koregaon Park', 'Pune', 'Maharashtra', '411001', 6500000, 4, 3, 2800, 'house', 'active', 'Restored heritage property with character', 2, 9, '2024-02-15', NULL),
+  ('Compact Studio', 'Indiranagar Main Street', 'Bangalore', 'Karnataka', '560008', 1500000, 1, 1, 600, 'apartment', 'active', 'Compact studio in prime location', 4, 8, '2024-03-01', NULL),
+  ('Modern Townhouse', 'Sector 37, Noida', 'Delhi', 'Delhi', '201303', 4500000, 3, 2.5, 1800, 'townhouse', 'active', 'Modern townhouse in Noida', 4, NULL, '2024-03-05', NULL),
+  ('Prime Development Land', 'Outer Ring Road', 'Hyderabad', 'Telangana', '500081', 2000000, 0, 0, 10000, 'land', 'active', 'Prime land for development', 4, 7, '2024-02-20', NULL),
+  ('Luxury Lake View Condo', 'Jubilee Hills', 'Hyderabad', 'Telangana', '500033', 7000000, 3, 2.5, 2000, 'condo', 'active', 'Luxury condo with lake view', 3, NULL, '2024-01-10', NULL),
+  ('Executive Luxury Home', 'Vasant Vihar', 'Delhi', 'Delhi', '110057', 12000000, 5, 4, 4000, 'house', 'sold', 'Luxury executive home', 2, 9, '2023-11-15', '2024-02-28');
 
 -- Insert viewings
 INSERT INTO viewings (property_id, client_id, viewing_date, notes) VALUES
