@@ -1,0 +1,5 @@
+
+> ats-backend@1.0.0 dev
+> node --watch src/server.js
+
+Real Estate API running on http://localhost:3001
